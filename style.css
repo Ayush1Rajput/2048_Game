@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.tile-2 {
+    background-color: #393939;
+}
+
+.tile-4 {
+    background-color: #4a4a4a;
+}
+
+.tile-8 {
+    background-color: #5e3d2e;
+    color: white;
+}
+
+.tile-16 {
+    background-color: #7a4423;
+    color: white;
+}
+
+.tile-32 {
+    background-color: #94402d;
+    color: white;
+}
+
+.tile-64 {
+    background-color: #b03b26;
+    color: white;
+}
+
+.tile-128 {
+    background-color: #c6a431;
+    color: black;
+}
+
+.tile-256 {
+    background-color: #bfa52b;
+    color: black;
+}
+
+.tile-512 {
+    background-color: #b59e1d;
+    color: black;
+}
+
+.tile-1024 {
+    background-color: #aa990f;
+    color: black;
+}
+
+.tile-2048 {
+    background-color: #9c8d00;
+    color: black;
+}
+
+.game-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.score-container {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5c9ead;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66bb6a;
+}
