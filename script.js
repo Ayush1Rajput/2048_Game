@@ -7,6 +7,7 @@ let tiles = [];
 
 function initializeGame() {
     tiles = [];
+    score=0
     board.innerHTML = '';
     for (let i = 0; i < 16; i++) {
         let tile = document.createElement("div");
@@ -142,4 +143,4 @@ document.addEventListener("keydown", (e) => {
 initializeGame();
 
 restartButton.addEventListener("click", initializeGame);
-restartButton.addEventListener("click",score=0);
+// restartButton.addEventListener("click",score=0);
